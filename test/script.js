@@ -70,5 +70,5 @@ function cryptoRandomNumber(minimum, maximum){
 	}
 }
 
-const timeout = cryptoRandomNumber(1000, 3000)
+const timeout = cryptoRandomNumber(50, 200)
 setTimeout(main, timeout)

@@ -1,16 +1,24 @@
-hash: 7641db381a138a888363556dbeb5773487e6d10f51047fb15b7a0682bda74b70
-updated: 2016-06-01T01:07:55.272797475-03:00
+hash: 72a8302de5032f18ed916adf2abcbc40a8d9b7b25d938f5e58f93d6a32c5e1b0
+updated: 2016-06-01T01:42:21.848066187-03:00
 imports:
 - name: github.com/aybabtme/uniplot
   version: 039c559e5e7e0512b313109b11266bf6fe2db223
   subpackages:
   - histogram
+- name: github.com/gosuri/uilive
+  version: efb88ccd059957c48f24f9d351d33a0eb00ede41
+- name: github.com/gosuri/uiprogress
+  version: a9f819bfc744fe70043abcc5a6cd0137a678e3d8
+  subpackages:
+  - util/strutil
 - name: github.com/inconshreveable/mousetrap
   version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
 - name: github.com/kless/term
   version: c8064aa880de646c634b193608ec79a41c823951
   subpackages:
   - sys
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
 - name: github.com/sethgrid/curse
   version: 3378651548d4bda6a856c69719d593d902ec8b21
 - name: github.com/sethgrid/multibar

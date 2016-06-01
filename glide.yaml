@@ -6,3 +6,5 @@ import:
 - package: github.com/aybabtme/uniplot
 - package: github.com/sethgrid/multibar
 - package: github.com/sethgrid/curse
+- package: github.com/gosuri/uiprogress
+- package: github.com/gosuri/uilive

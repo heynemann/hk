@@ -4,8 +4,6 @@ import (
 	"encoding/json"
 	"os/exec"
 	"strings"
-
-	"github.com/sethgrid/multibar"
 )
 
 type Result struct {
@@ -13,7 +11,7 @@ type Result struct {
 	EndDate   float64
 }
 
-func Run(command string, producers int, scripts int, workers int, bar multibar.ProgressFunc) ([]Result, []error) {
+func Run(command string, producers int, scripts int, workers int, bar func() bool) ([]Result, []error) {
 	sem := make(chan bool, workers)
 	results := make([]Result, producers*scripts)
 	errors := make([]error, producers*scripts)
@@ -32,7 +30,9 @@ func Run(command string, producers int, scripts int, workers int, bar multibar.P
 					results[index] = *result
 				}
 				processed++
-				bar(processed)
+				if bar != nil {
+					bar()
+				}
 			}(i, j)
 		}
 	}
