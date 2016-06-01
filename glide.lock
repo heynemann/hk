@@ -1,0 +1,28 @@
+hash: 7641db381a138a888363556dbeb5773487e6d10f51047fb15b7a0682bda74b70
+updated: 2016-06-01T01:07:55.272797475-03:00
+imports:
+- name: github.com/aybabtme/uniplot
+  version: 039c559e5e7e0512b313109b11266bf6fe2db223
+  subpackages:
+  - histogram
+- name: github.com/inconshreveable/mousetrap
+  version: 76626ae9c91c4f2a10f34cad8ce83ea42c93bb75
+- name: github.com/kless/term
+  version: c8064aa880de646c634b193608ec79a41c823951
+  subpackages:
+  - sys
+- name: github.com/sethgrid/curse
+  version: 3378651548d4bda6a856c69719d593d902ec8b21
+- name: github.com/sethgrid/multibar
+  version: 4bf4cf7b87d60bfaf4b4ec40fc7aabf376d0be37
+- name: github.com/spf13/cobra
+  version: f368244301305f414206f889b1735a54cfc8bde8
+  subpackages:
+  - cobra
+- name: github.com/spf13/pflag
+  version: cb88ea77998c3f024757528e3305022ab50b43be
+- name: golang.org/x/sys
+  version: d4feaf1a7e61e1d9e79e6c4e76c6349e9cab0a03
+  subpackages:
+  - unix
+devImports: []

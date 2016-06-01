@@ -1,0 +1,8 @@
+package: github.com/heynemann/hk
+import:
+- package: github.com/spf13/cobra
+  subpackages:
+  - cobra
+- package: github.com/aybabtme/uniplot
+- package: github.com/sethgrid/multibar
+- package: github.com/sethgrid/curse
