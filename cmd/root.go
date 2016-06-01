@@ -48,6 +48,8 @@ A producer is just any script that can output a json output to StdOut.
 		results, _ := core.Run(command, producers, scripts, workers, bar.Incr)
 
 		fmt.Println()
+		fmt.Println()
+		fmt.Println()
 		fmt.Printf("%d scripts executed in %.2fs\n", producers*scripts, float64(time.Now().UnixNano()-startTime)/1000000/1000)
 
 		fmt.Println()
